@@ -44,7 +44,7 @@ var navigationservice = angular.module('navigationservice', [])
     name: "Journal",
     classis: "active",
     anchor: "newTab"
-  }
+  },
   {
     name: "Contact",
     classis: "active",
