@@ -17,11 +17,27 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       templateUrl: "views/template.html",
       controller: 'HomeCtrl'
     })
-    .state('newTab', {
-      url: "/new",
+    .state('about', {
+      url: "/about",
       templateUrl: "views/template.html",
-      controller: 'NewTabCtrl'
-    });
+      controller: 'AboutCtrl'
+    })
+    .state('shop', {
+      url: "/shop",
+      templateUrl: "views/template.html",
+      controller: 'ShopCtrl'
+    })
+    .state('custom', {
+      url: "/custom",
+      templateUrl: "views/template.html",
+      controller: 'CustomCtrl'
+    })
+    .state('contact', {
+      url: "/contact",
+      templateUrl: "views/template.html",
+      controller: 'ContactCtrl'
+    })
+    ;
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);
 });

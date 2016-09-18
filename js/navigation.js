@@ -13,42 +13,42 @@ var navigationservice = angular.module('navigationservice', [])
   var navigation = [{
     name: "Jewellery",
     classis: "active",
-    anchor: "home",
-    subnav: [{
-      name: "Subnav1",
-      classis: "active",
-      anchor: "home"
-    }]
+    anchor: "home"
+    // subnav: [{
+    //   name: "Subnav1",
+    //   classis: "active",
+    //   anchor: "home"
+    // }]
   },
   {
     name: "About",
     classis: "active",
-    anchor: "newTab"
+    anchor: "about"
   },
   {
     name: "Shop",
     classis: "active",
-    anchor: "newTab"
+    anchor: "shop"
   },
   {
     name: "Custom",
     classis: "active",
-    anchor: "newTab"
+    anchor: "custom"
   },
-  {
-    name: "Retailers",
-    classis: "active",
-    anchor: "newTab"
-  },
-  {
-    name: "Journal",
-    classis: "active",
-    anchor: "newTab"
-  },
+  // {
+  //   name: "Retailers",
+  //   classis: "active",
+  //   anchor: "newTab"
+  // },
+  // {
+  //   name: "Journal",
+  //   classis: "active",
+  //   anchor: "newTab"
+  // },
   {
     name: "Contact",
     classis: "active",
-    anchor: "newTab"
+    anchor: "contact"
   }];
 
   return {

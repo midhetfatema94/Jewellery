@@ -18,17 +18,51 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   ];
 })
 
-.controller('NewTabCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
 
   console.log("Testing Consoles");
 
-  $scope.template = TemplateService.changecontent("home");
-  $scope.menutitle = NavigationService.makeactive("Home");
+  $scope.template = TemplateService.changecontent("about");
+  $scope.menutitle = NavigationService.makeactive("About");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
+})
 
+.controller('ShopCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+
+  console.log("Testing Consoles");
+
+  $scope.template = TemplateService.changecontent("shop");
+  $scope.menutitle = NavigationService.makeactive("Shop");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+})
+
+.controller('CustomCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+
+  console.log("Testing Consoles");
+
+  $scope.template = TemplateService.changecontent("custom");
+  $scope.menutitle = NavigationService.makeactive("Custom");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
+
+})
+
+.controller('ContactCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+  //Used to name the .html file
+
+  console.log("Testing Consoles");
+
+  $scope.template = TemplateService.changecontent("contact");
+  $scope.menutitle = NavigationService.makeactive("Contact");
+  TemplateService.title = $scope.menutitle;
+  $scope.navigation = NavigationService.getnav();
 
 })
 
