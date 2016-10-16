@@ -10,70 +10,79 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $(document).ready(function() {
-    $('#myCarousel').carousel({
-        interval: 10000
-    })
-  });
+  $scope.myInterval = 1200;
+  // $(document).ready(function() {
+  //   $('#myCarousel').carousel({
+  //     interval: 1200,
+  //     cycle: true
+  //   })
+  // });
 
-  $('.nav-carousel').bind({
-  offset:
-  {
-    top: $('#thumbCarousel').height()-$('.nav-carousel').height()
-  }
-});
+  // $scope.rotate = function() {
+  //   console.log("inside rotate")
+  //   $('#myCarousel').ready(function() {
+  //       interval: 5
+  //   })
+  // }
 
-$(document).ready( function()
-{
-  var carouselContainer = $('.carousel');
-  var slideInterval = 2500;
+//   $('.nav-carousel').bind({
+//   offset:
+//   {
+//     top: $('#thumbCarousel').height()-$('.nav-carousel').height()
+//   }
+// });
 
-  $('#carousel').carousel({
-    interval:   slideInterval
-  });
+// $(document).ready( function()
+// {
+//   var carouselContainer = $('.carousel');
+//   var slideInterval = 2500;
 
-  var clickEvent = false;
-  $('#thumbCarousel').on('click', '.nav-carousel a', function() {
-      clickEvent = true;
-      // $('.nav-carousel li').removeClass('active');
-      $(this).parent().addClass('active');
-  }).on('slid.bs.carousel', function(e)
-  {
-    if(!clickEvent)
-    {
-      var count = $('.nav-carousel').children().length -1;
-      var current = $('.nav-carousel li.active');
-      current.removeClass('active').next().addClass('active');
-      var id = parseInt(current.data('slide-to'));
-      if(count == id)
-      {
-        $('.nav-carousel li').first().addClass('active');
-      }
-    }
-    clickEvent = false;
-  });
-});
+//   $('#carousel').carousel({
+//     interval:   slideInterval
+//   });
 
-$(document).ready(function()
-{
-  $('.slide1, .slide2, .slide3').hover(function()
-    {
-      $(this).find('.caption').delay(200).slideDown(350);
-    },
-    function()
-    {
-      $(this).find('.caption').delay(200).slideUp(350);
-  });
+//   var clickEvent = false;
+//   $('#thumbCarousel').on('click', '.nav-carousel a', function() {
+//       clickEvent = true;
+//       // $('.nav-carousel li').removeClass('active');
+//       $(this).parent().addClass('active');
+//   }).on('slid.bs.carousel', function(e)
+//   {
+//     if(!clickEvent)
+//     {
+//       var count = $('.nav-carousel').children().length -1;
+//       var current = $('.nav-carousel li.active');
+//       current.removeClass('active').next().addClass('active');
+//       var id = parseInt(current.data('slide-to'));
+//       if(count == id)
+//       {
+//         $('.nav-carousel li').first().addClass('active');
+//       }
+//     }
+//     clickEvent = false;
+//   });
+// });
 
-  $('.fade1, .fade2').hover(
-      function(){
-        $(this).find('.caption').delay(200).fadeIn(350);
-      },
-      function(){
-        $(this).find('.caption').delay(200).fadeOut(350);
-      }
-  );
-});
+// $(document).ready(function()
+// {
+//   $('.slide1, .slide2, .slide3').hover(function()
+//     {
+//       $(this).find('.caption').delay(200).slideDown(350);
+//     },
+//     function()
+//     {
+//       $(this).find('.caption').delay(200).slideUp(350);
+//   });
+
+//   $('.fade1, .fade2').hover(
+//       function(){
+//         $(this).find('.caption').delay(200).fadeIn(350);
+//       },
+//       function(){
+//         $(this).find('.caption').delay(200).fadeOut(350);
+//       }
+//   );
+// });
 
   $scope.mySlides = [
     'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',

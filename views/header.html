@@ -1,19 +1,30 @@
 <header>
    <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="20"> </a>
+        <div class="row">
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+                <div class="navbar-header" style="padding-left: 20px;width: 100px;">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" ui-sref="home"><img src="img/logo.png" alt="logo" width="70"> </a>
+                </div>
+            </div>
         </div>
-
-        <div class="collapse navbar-collapse" id="nav-collapse">
-               <div ng-include="template.menu" class="template menu"></div>
-        </div>
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6">
+                <div class="collapse navbar-collapse" id="nav-collapse" style="font-family: monospace;text-transform: uppercase;letter-spacing: 3px;font-weight: 700;font-style: normal;font-size: 12px;background: none !important;padding-left: 10px;">
+                   <div ng-include="template.menu" class="template menu"></div>
+                </div>
+            </div>
+            </div>
     </div>
 </nav>
 </header>
