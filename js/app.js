@@ -27,17 +27,16 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
       templateUrl: "views/template.html",
       controller: 'ShopCtrl'
     })
-    .state('custom', {
-      url: "/custom",
+    .state('blog', {
+      url: "/blog",
       templateUrl: "views/template.html",
-      controller: 'CustomCtrl'
+      controller: 'BlogCtrl'
     })
     .state('contact', {
       url: "/contact",
       templateUrl: "views/template.html",
       controller: 'ContactCtrl'
-    })
-    ;
+    });
   $urlRouterProvider.otherwise("/");
   $locationProvider.html5Mode(isproduction);
 });

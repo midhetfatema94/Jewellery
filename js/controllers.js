@@ -10,7 +10,11 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  $scope.myInterval = 1200;
+  // $scope.myInterval = 1200;
+  $scope.repeaters = ["I", "me", "and", "myself"]
+  $scope.igClick = function () {
+    console.log("clicked on ig icon");
+  }
   // $(document).ready(function() {
   //   $('#myCarousel').carousel({
   //     interval: 1200,
@@ -116,13 +120,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 })
 
-.controller('CustomCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('BlogCtrl', function($scope, TemplateService, NavigationService, $timeout) {
   //Used to name the .html file
 
   console.log("Testing Consoles");
 
-  $scope.template = TemplateService.changecontent("custom");
-  $scope.menutitle = NavigationService.makeactive("Custom");
+  $scope.template = TemplateService.changecontent("blog");
+  $scope.menutitle = NavigationService.makeactive("Blog");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 

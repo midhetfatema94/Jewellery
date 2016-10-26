@@ -31,9 +31,9 @@ var navigationservice = angular.module('navigationservice', [])
     anchor: "shop"
   },
   {
-    name: "Custom",
+    name: "Blog",
     classis: "active",
-    anchor: "custom"
+    anchor: "blog"
   },
   // {
   //   name: "Retailers",
