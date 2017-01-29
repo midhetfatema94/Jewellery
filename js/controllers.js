@@ -10,83 +10,26 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
 
-  // $scope.myInterval = 1200;
-  $scope.repeaters = ["I", "me", "and", "myself"]
   $scope.igClick = function () {
     console.log("clicked on ig icon");
   }
-  // $(document).ready(function() {
-  //   $('#myCarousel').carousel({
-  //     interval: 1200,
-  //     cycle: true
-  //   })
-  // });
 
-  // $scope.rotate = function() {
-  //   console.log("inside rotate")
-  //   $('#myCarousel').ready(function() {
-  //       interval: 5
-  //   })
-  // }
+  $(window).load(function() {
+    $('.topCarousel').flexslider({
+      animation: "slide",
+      directionNav: false
+    });
+  });
 
-//   $('.nav-carousel').bind({
-//   offset:
-//   {
-//     top: $('#thumbCarousel').height()-$('.nav-carousel').height()
-//   }
-// });
-
-// $(document).ready( function()
-// {
-//   var carouselContainer = $('.carousel');
-//   var slideInterval = 2500;
-
-//   $('#carousel').carousel({
-//     interval:   slideInterval
-//   });
-
-//   var clickEvent = false;
-//   $('#thumbCarousel').on('click', '.nav-carousel a', function() {
-//       clickEvent = true;
-//       // $('.nav-carousel li').removeClass('active');
-//       $(this).parent().addClass('active');
-//   }).on('slid.bs.carousel', function(e)
-//   {
-//     if(!clickEvent)
-//     {
-//       var count = $('.nav-carousel').children().length -1;
-//       var current = $('.nav-carousel li.active');
-//       current.removeClass('active').next().addClass('active');
-//       var id = parseInt(current.data('slide-to'));
-//       if(count == id)
-//       {
-//         $('.nav-carousel li').first().addClass('active');
-//       }
-//     }
-//     clickEvent = false;
-//   });
-// });
-
-// $(document).ready(function()
-// {
-//   $('.slide1, .slide2, .slide3').hover(function()
-//     {
-//       $(this).find('.caption').delay(200).slideDown(350);
-//     },
-//     function()
-//     {
-//       $(this).find('.caption').delay(200).slideUp(350);
-//   });
-
-//   $('.fade1, .fade2').hover(
-//       function(){
-//         $(this).find('.caption').delay(200).fadeIn(350);
-//       },
-//       function(){
-//         $(this).find('.caption').delay(200).fadeOut(350);
-//       }
-//   );
-// });
+  $(window).load(function() {
+    $('.igCarousel').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      itemWidth: 210,
+      itemMargin: 5,
+      directionNav: false
+    });
+  });
 
   $scope.mySlides = [
     'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',

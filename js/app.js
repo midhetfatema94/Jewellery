@@ -3,9 +3,7 @@ var firstapp = angular.module('firstapp', [
   'ui.router',
   'phonecatControllers',
   'templateservicemod',
-  'navigationservice',
-  'pascalprecht.translate',
-  'angulartics'
+  'navigationservice'
 ]);
 
 firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $locationProvider) {
@@ -88,8 +86,8 @@ firstapp.directive('fancyboxBox', function($document) {
 });
 
 
-firstapp.config(function ($translateProvider) {
-  $translateProvider.translations('en', LanguageEnglish);
-  $translateProvider.translations('hi', LanguageHindi);
-  $translateProvider.preferredLanguage('en');
-});
+// firstapp.config(function ($translateProvider) {
+//   $translateProvider.translations('en', LanguageEnglish);
+//   $translateProvider.translations('hi', LanguageHindi);
+//   $translateProvider.preferredLanguage('en');
+// });

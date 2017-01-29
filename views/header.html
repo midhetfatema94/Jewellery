@@ -1,30 +1,20 @@
 <header>
-   <nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 1px solid #585858;">
+   <nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-            </div>
-            <div class="col-md-2" style="height: 100px;">
-                <div class="navbar-header" style="padding-left: 45px; width: 100px;">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" ui-sref="home"><img src="img/zebLogo.jpg" alt="logo" style="width:70px"></a>
-                </div>
-            </div>
+        <div class="navbar-header" style="height: 100px;">
+            <button type="button" class="navbar-toggle collapsed button-header" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                <span class="icon-bar flat-icon-bar"></span>
+                <span class="icon-bar flat-icon-bar"></span>
+                <span class="icon-bar flat-icon-bar"></span>
+                <span class="icon-bar flat-icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" ui-sref="home"><img src="img/zebLogo.jpg" alt="logo" style="width:70px"></a>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-                <div class="collapse navbar-collapse" id="nav-collapse" style="font-family: 'Josefin Sans', sans-serif;text-transform: uppercase;letter-spacing: 3px;font-weight: 700;font-style: normal;font-size: 12px;background: none !important;padding-left: 23px;">
-                   <div ng-include="template.menu" class="template menu"></div>
-                </div>
-            </div>
-            </div>
+
+        <div class="collapse navbar-collapse navbar-style" id="nav-collapse">
+           <div ng-include="template.menu" class="template menu"></div>
+        </div>
     </div>
-</nav>
+  </nav>
 </header>
