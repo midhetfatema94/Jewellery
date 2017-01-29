@@ -4,18 +4,18 @@
     <div class="topCarousel" style="margin-top: 125px;">
       <ul class="slides">
         <li ng-repeat="slide in mySlides">
-          <img ng-src="{{slide}}" style="width: 100%;height: auto;" />
+          <img ng-src="{{slide}}" class="flex-image" />
         </li>
       </ul>
     </div>
     </div>
 
-    <div class="row" style="margin-bottom: 50px;padding-bottom: 50px;margin-top: 10%">
+    <div class="row" id="newsletter-row">
         <h3 class="newsletter-heading">KEEP UP WITH ALL MYSTICAL MOON HAPPENINGS AND SPARKLY THINGS</h3>
         <p class="newsletter-subheading">Join us virtually with our monthly newsletter where we talk about planetary happenings, exclusive jewelry deals and any other woo woo we dream up!</p>
         <div class="center" style="text-align: center;">
-            <input type="email" placeholder="Email Address" style="line-height: 2.5;padding-left: 8px;font-family: 'Josefin Sans', sans-serif;font-size: 18px;width: 300px;">
-            <button type="submit" class="btn" style="line-height: 2.5;width: 85px;background: #000000;color: white;font-family: 'Josefin Sans', sans-serif;font-size: 14px;text-transform: uppercase;">Say Hey!</button>
+            <input type="email" placeholder="Email Address" id="flat-design-email">
+            <button type="submit" class="btn flat-design-button">Say Hey!</button>
         </div>
     </div>
 
@@ -23,7 +23,7 @@
         <div class="igCarousel">
           <ul class="slides">
             <li ng-repeat="slide in mySlides">
-              <img ng-src="{{slide}}" style="width: 100%;height: auto;" ng-click="igClick()"/>
+              <img ng-src="{{slide}}" class="flex-image" ng-click="igClick()"/>
             </li>
           </ul>
         </div>
