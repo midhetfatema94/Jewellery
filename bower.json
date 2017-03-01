@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "MCreations",
+  "description": "Made by MCreations",
   "main": "gulpfile.js",
   "authors": [],
   "license": "ISC",
@@ -23,6 +23,7 @@
     "bootstrap-sass": "~3.3.5",
     "bourbon": "~4.2.5",
     "angular-sanitize": "~1.4.3",
+    "instafeed.js": "~1.4.1",
     "font-awesome": "^4.6.3",
     "lodash": "~4.0.0",
     "ui-router": "~0.2.15",

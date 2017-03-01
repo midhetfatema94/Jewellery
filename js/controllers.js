@@ -31,12 +31,29 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     });
   });
 
-  $scope.mySlides = [
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-    'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-  ];
+  NavigationService.getBannerImages(function(data) {
+    if (data.status) {
+      console.log("products", data);
+      $scope.mySlides = data.response;
+    }
+    else {
+      console.log("error while fetching products");
+    }
+  })
+
+  var feed = new Instafeed({
+      get: 'tagged',
+      tagName: 'awesome',
+      clientId: 'YOUR_CLIENT_ID'
+  });
+  feed.run();
+
+  // $scope.mySlides = [
+  //   'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
+  //   'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
+  //   'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
+  //   'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+  // ];
 })
 
 .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -60,6 +77,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
   $scope.menutitle = NavigationService.makeactive("Shop");
   TemplateService.title = $scope.menutitle;
   $scope.navigation = NavigationService.getnav();
+
+  NavigationService.getAllProducts(function(data) {
+    if (data.status) {
+      console.log("products", data);
+      $scope.allProducts = data.response;
+    }
+    else {
+      console.log("error while fetching products");
+    }
+  });
 
 })
 

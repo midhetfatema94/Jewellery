@@ -1,7 +1,9 @@
 
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function() {
+.factory('NavigationService', function($http) {
+  
+  var adminUrl = "http://localhost:1337/api/";
   var navigation = [{
     name: "Jewellery",
     classis: "active",
@@ -57,6 +59,20 @@ var navigationservice = angular.module('navigationservice', [])
       }
       return menuname;
     },
-
+    getAllProducts: function (callback) {
+      // console.log('form data: ', formData);
+      $http({
+        url: adminUrl + 'product/getAll',
+        method: 'POST',
+        withCredentials: false,
+      }).success(callback);
+    },
+    getBannerImages: function(callback) {
+      $http({
+        url: adminUrl + 'banner/getAll',
+        method: 'POST',
+        withCredentials: false,
+      }).success(callback);
+    }
   };
 });
