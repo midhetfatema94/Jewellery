@@ -1,35 +1,40 @@
 .navbar-style {
-
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 12px;
-	background-color: #f8f8f8;
+	background-color: #FFFFFF;
     padding-top: 25px !important;
 }
 
 .button-header {
-	
 	padding-top: 25px;
 	background-color: transparent !important;
 	border-color: transparent !important;
 }
 
 .flat-icon-bar {
-	
-	background: black !important;
+	background: #44211D !important;
 	height: 1px !important;
 }
 
+.flex-control-paging li a {
+	background: #ffffff !important;
+}
+.flex-control-paging li a:hover {
+	background: #eeeeee !important;
+}
+.flex-control-paging li a.flex-active { 
+	background: #44211D !important;
+}
+
 #main-navbar {
-	
-	border-bottom: 1px solid #585858;
+	border-bottom: 1px solid #44211D;
 }
 
 .carousel-image {
-	
 	padding-top: 50px;
 	margin-top: 10px;
 	width: 100%;
@@ -37,7 +42,6 @@
 }
 
 .newsletter-heading {
-
 	padding-left: 10px;
     text-align: center;
     line-height: 30px;
@@ -47,7 +51,6 @@
 }
 
 .newsletter-subheading {
-
 	text-align: center;
 	line-height: 20px;
 	padding-left: 10px;
@@ -60,63 +63,65 @@
 }
 
 .topCarousel > ol {
-    
     width: 100%;
     box-sizing: border-box;
 }
 
 .flex-control-nav {
-
     position: relative !important;
 }
 
 .flex-image {
-
 	width: 100%;
 	height: auto;
 }
 
 #flat-design-email {
-	
-	line-height: 2.5;
+	line-height: 2.4;
 	padding-left: 8px;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	width: 300px;
+	border: 1px solid #44211D;
 }
 
 #newsletter-row {
-
 	margin-bottom: 50px;
 	padding-bottom: 50px;
 	margin-top: 10%
 }
 
 .flat-design-button {
-
 	line-height: 2.5;
 	width: 85px;
-	background: #000000;
-	color: white;
+	background: #44211D;
+	color: #FFFFFF;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 }
 
+.navbar-default {
+	background-color: #FFFFFF !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #44211D !important;
+}
+
 body {
 	font-family: 'Josefin Sans', sans-serif;
+	color: #44211D;
 }
 
 .description-style {
-
 	text-align: center;
 	height: 25px;
 	padding-top: 10px;
 }
 
 .footer-links {
-
-	color: black;
+	color: #44211D;
 	display: inline-block;
 	width: 20px;
 }
