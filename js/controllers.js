@@ -39,14 +39,28 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     else {
       console.log("error while fetching products");
     }
-  })
-
-  var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'awesome',
-      clientId: 'YOUR_CLIENT_ID'
   });
-  feed.run();
+
+  var access = "206699945.ee12b30.6d9d9eca03e946398b97ec61b38b9820";
+  NavigationService.getInstaImages(access, function(data) {
+    if (data.meta.code == 200) {
+      console.log("products", data.data);
+      $scope.instaImages = data.data;
+    }
+    else {
+      console.log("error while fetching products");
+    }
+  });
+
+  console.log("insta image:", $scope.instaImages);
+
+  // var feed = new Instafeed({
+  //     get: 'tagged',
+  //     tagName: 'awesome',
+  //     clientId: 'ee12b303600d479188f159f272356aa8',
+  //     accessToken: '206699945.ee12b30.6d9d9eca03e946398b97ec61b38b9820'
+  // });
+  // feed.run();
 
   // $scope.mySlides = [
   //   'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',

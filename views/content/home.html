@@ -22,8 +22,8 @@
     <div class="row">
         <div class="igCarousel">
           <ul class="slides">
-            <li ng-repeat="slide in mySlides" id="instafeed">
-              <img ng-src="http://localhost:1337/api/upload/readFile?file={{slide.image}}" class="flex-image" ng-click="igClick()"/>
+            <li ng-repeat="image in instaImages">
+              <img ng-src="{{image.images.thumbnail.url}}" class="flex-image" ng-click="igClick()" />
             </li>
           </ul>
         </div>
