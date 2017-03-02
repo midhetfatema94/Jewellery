@@ -1,0 +1,137 @@
+.navbar-style {
+
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12px;
+	background-color: #f8f8f8;
+    padding-top: 25px !important;
+}
+
+.button-header {
+	
+	padding-top: 25px;
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+
+.flat-icon-bar {
+	
+	background: black !important;
+	height: 1px !important;
+}
+
+#main-navbar {
+	
+	border-bottom: 1px solid #585858;
+}
+
+.carousel-image {
+	
+	padding-top: 50px;
+	margin-top: 10px;
+	width: 100%;
+	max-height: 600px;
+}
+
+.newsletter-heading {
+
+	padding-left: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.newsletter-subheading {
+
+	text-align: center;
+	line-height: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.topCarousel > ol {
+    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flex-control-nav {
+
+    position: relative !important;
+}
+
+.flex-image {
+
+	width: 100%;
+	height: auto;
+}
+
+#flat-design-email {
+	
+	line-height: 2.5;
+	padding-left: 8px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	width: 300px;
+}
+
+#newsletter-row {
+
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	margin-top: 10%
+}
+
+.flat-design-button {
+
+	line-height: 2.5;
+	width: 85px;
+	background: #000000;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.description-style {
+
+	text-align: center;
+	height: 25px;
+	padding-top: 10px;
+}
+
+.footer-links {
+
+	color: black;
+	display: inline-block;
+	width: 20px;
+}
+
+/* For mobile phones: */
+[class*="navbar-style"] {
+ text-align: center;   
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .navbar-style {padding-left: 285px !important;}
+}
+
+/* For mobile phones: */
+[class*="description-style"] {
+ font-size: 12px;
+}
