@@ -73,6 +73,14 @@ var navigationservice = angular.module('navigationservice', [])
         method: 'POST',
         withCredentials: false,
       }).success(callback);
+    },
+    getInstaImages: function(accessToken, callback) {
+      console.log("access token is:", accessToken);      
+      $http({
+        url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=' + accessToken,
+        method: 'GET',
+        withCredentials: false,
+      }).success(callback);
     }
   };
 });
