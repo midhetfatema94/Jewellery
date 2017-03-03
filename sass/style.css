@@ -1,5 +1,4 @@
 .navbar-style {
-
 	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -11,25 +10,21 @@
 }
 
 .button-header {
-	
 	padding-top: 25px;
 	background-color: transparent !important;
 	border-color: transparent !important;
 }
 
 .flat-icon-bar {
-	
 	background: black !important;
 	height: 1px !important;
 }
 
 #main-navbar {
-	
 	border-bottom: 1px solid #585858;
 }
 
 .carousel-image {
-	
 	padding-top: 50px;
 	margin-top: 10px;
 	width: 100%;
@@ -37,7 +32,6 @@
 }
 
 .newsletter-heading {
-
 	padding-left: 10px;
     text-align: center;
     line-height: 30px;
@@ -47,7 +41,6 @@
 }
 
 .newsletter-subheading {
-
 	text-align: center;
 	line-height: 20px;
 	padding-left: 10px;
@@ -60,24 +53,20 @@
 }
 
 .topCarousel > ol {
-    
     width: 100%;
     box-sizing: border-box;
 }
 
 .flex-control-nav {
-
     position: relative !important;
 }
 
 .flex-image {
-
 	width: 100%;
 	height: auto;
 }
 
 #flat-design-email {
-	
 	line-height: 2.5;
 	padding-left: 8px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -86,14 +75,12 @@
 }
 
 #newsletter-row {
-
 	margin-bottom: 50px;
 	padding-bottom: 50px;
 	margin-top: 10%
 }
 
 .flat-design-button {
-
 	line-height: 2.5;
 	width: 85px;
 	background: #000000;
@@ -108,14 +95,12 @@ body {
 }
 
 .description-style {
-
 	text-align: center;
 	height: 25px;
 	padding-top: 10px;
 }
 
 .footer-links {
-
 	color: black;
 	display: inline-block;
 	width: 20px;
@@ -133,5 +118,5 @@ body {
 
 /* For mobile phones: */
 [class*="description-style"] {
- font-size: 12px;
+	font-size: 12px;
 }
